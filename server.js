@@ -125,6 +125,10 @@ app.use(route(function(router) {
     return documentHandler.handlePost(request, response);
   });
 
+  router.post('/documents/:id', function(request, response) {
+    return documentHandler.handlePost(request, response);
+  });
+
   // get documents
   router.get('/documents/:id', function(request, response) {
     return documentHandler.handleGet(request, response, config);
