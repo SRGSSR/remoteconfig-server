@@ -122,19 +122,19 @@ app.use(route(function(router) {
   // add documents
 
   router.post('/documents', function(request, response) {
-    return documentHandler.handlePost(request, response);
+    return documentHandler.handlePost(request, response, config);
   });
 
   router.post('/documents/:id', function(request, response) {
-    return documentHandler.handlePost(request, response);
+    return documentHandler.handlePost(request, response, config);
   });
 
   router.put('/documents', function(request, response) {
-    return documentHandler.handlePost(request, response);
+    return documentHandler.handlePost(request, response, config);
   });
 
   router.put('/documents/:id', function(request, response) {
-    return documentHandler.handlePost(request, response);
+    return documentHandler.handlePost(request, response, config);
   });
 
   // get documents

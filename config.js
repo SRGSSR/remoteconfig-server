@@ -20,7 +20,7 @@
   ],
 
   "keyGenerator": {
-    "type": "phonetic"
+    "type": "random"
   },
 
   "rateLimits": {
@@ -38,6 +38,10 @@
 
   "documents": {
     "about": "./about.md"
-  }
+  },
 
+  "tokens": {
+    "create": ["createToken1"],
+    "edit": ["editToken1"]
+  }
 }
